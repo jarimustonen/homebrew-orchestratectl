@@ -1,19 +1,19 @@
 class Orchestratectl < Formula
   desc "Rust CLI for orchestrating AI-agent workflows on a developer's machine."
   homepage "https://github.com/jarimustonen/orchestratectl"
-  version "0.4.1"
+  version "0.5.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/jarimustonen/orchestratectl/releases/download/v0.4.1/orchestratectl-aarch64-apple-darwin.tar.xz"
-    sha256 "985b18fcc9b00c0173b3b01b2813b7cd9cebc21e1fbafa76013ff99dc6800c4b"
+    url "https://github.com/jarimustonen/orchestratectl/releases/download/v0.5.0/orchestratectl-aarch64-apple-darwin.tar.xz"
+    sha256 "e7c24b86b521b790a833923626e0b9ea65e84b70a7c14e92eed1df5e69fccae2"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jarimustonen/orchestratectl/releases/download/v0.4.1/orchestratectl-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "52c2d5da0ff9dd2463c78c0a83d8a34282feb877471d52379b0fd8407c92b3ab"
+      url "https://github.com/jarimustonen/orchestratectl/releases/download/v0.5.0/orchestratectl-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "355cfe5955d6fe75c9cb4c6ab5f9e91fd855bfaa672f3165411dc3791907f9d7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jarimustonen/orchestratectl/releases/download/v0.4.1/orchestratectl-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7bbaa13465317081eb48456c7a181126b0b2976f42c3fc15c960680553095b5a"
+      url "https://github.com/jarimustonen/orchestratectl/releases/download/v0.5.0/orchestratectl-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4764578af2ca8b8e4373cd15f7936233ccbda80fd056f243a17cf08248979b83"
     end
   end
   license "MIT"
